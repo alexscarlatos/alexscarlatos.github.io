@@ -1,0 +1,234 @@
+body {
+    background-image: url('./images/bg.jpeg');
+    color: #222;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+.mainContainer {
+    background-color: rgba(255, 255, 255, .9);
+    max-width: 800px;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 15px;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 20px;
+    margin: 15px 0 15px 0;
+}
+
+.flex-stretch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#tabs {
+    margin: 0 0px 30px 0px;
+    color: #555;
+    font-size: 28px;
+}
+div.tab {
+    display: inline-block;
+    padding: 5px;
+}
+.tab a {
+    text-decoration: none;
+    color: #555;
+}
+.tab a:hover {
+    color: #777;
+}
+.tab a.selected {
+    color: #111;
+}
+
+
+#sectionContainer {
+    margin: 0px 20px 0px 20px;
+}
+
+.document a {
+    color: #555;
+    text-decoration: none;
+}
+
+.centered {
+    text-align: center;
+}
+.centered img {
+    padding: 0px 5px 5px 5px;
+}
+.img-icon:hover,
+.img-icon:focus {
+    cursor: pointer;
+}
+
+#footer {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.87); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #EEEEEE;
+    border: 1px solid #888;
+    position: relative;
+    top: 50px;
+    display: table;
+    margin: auto;
+
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 6px 12px 27px 12px;
+}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #E0DFD8;
+    color: white;
+}
+
+.modalImg {
+    display: block;
+    margin: auto;
+    padding: 3px;
+}
+
+.modal-larr {
+    float: left;
+}
+
+.modal-rarr {
+    float: right;
+}
+
+.modal-larr,
+.modal-rarr {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* The Close Button */
+.close {
+    position: relative;
+    right: 20px;
+    top: 10px;
+    float: right;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:focus,
+.close:hover,
+.modal-larr:hover,
+.modal-larr:focus,
+.modal-rarr:hover,
+.modal-rarr:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#titleContent {
+    text-align: center;
+}
+#titleContent p {
+    margin: 0 0 10px 0;
+}
+#titleContent > div {
+    vertical-align: top;
+}
+#profileImg {
+    border: 2px solid #ddd;
+}
+#titleAndBio {
+    max-width: 300px;
+    margin: auto;
+}
+#titleAndBio a {
+    color: #3428d8;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+.list-item {
+    padding: 0 30px 0 30px;
+}
+.list-item h2 {
+    text-align: center;
+}
+.list-item-content {
+    display: inline-flex;
+    padding: 0 15px 0 15px;
+}
+.list-item-content div {
+    display: inline-block;
+    vertical-align: top;
+}
+.list-item-content img {
+    padding-right: 15px;
+}
+.list-item-content p {
+    margin-top: 0;
+}
+.list-item a {
+    //color: cyan;
+}
+.list-item h2 a {
+    color: #222;
+    text-decoration: none;
+}
+
+.about-header {
+    text-align: center;
+    font-size: 24px;
+}
+.about-sub-header {
+    //text-align: left !important;
+}
+ul {
+    margin: 0 0 0 0;
+}
+
+.image-quilting-imgs img {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}

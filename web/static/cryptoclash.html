@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <script type="text/javascript">
+            $(function() {});
+        </script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">CryptoCLASH</h1>
+        <div class="mainContainer">
+            <div id="tabs">
+                <div class="tab">
+                    <a href="#" onclick="openSection('#trailer', $(this));" class="selected">Trailer</a>
+                </div>
+                <!--
+                |
+                <div class="tab">
+                    <a href="https://github.com/alexscarlatos/CryptoClash" target="_blank">GitHub</a>
+                </div>
+                -->
+                |
+                <div class="tab">
+                    <a href="https://xsrv.mm.cs.stonybrook.edu/cryptoclash/v1_1/" target="_blank">Play Beta</a>
+                </div>
+                |
+                <div class="tab">
+                    <a href="#" onclick="openSection('#documents', $(this));">Documents</a>
+                </div>
+            </div>
+            <div id="sectionContainer">
+                <div class="section centered" id="screenshots" style="display:none;">
+                </div>
+
+                <div class="section centered" id="trailer">
+                    <video width="533" height="300" poster="images/CryptoClash.png" controls>
+                        <source src="videos/CryptoCLASH Trailer.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="section centered" id="documents"  style="display:none;">
+                    <h2 class="document"><a href="documents/CryptoClash Abstract.pdf" target="_blank">Abstract</a></h2>
+                    <h2 class="document"><a href="documents/CryptoClash Poster.pdf" target="_blank">Poster</a></h2>
+                </div>
+            </div>
+            <div id="footer">
+                Copyright 2018 Alex Scarlatos
+            </div>
+        </div>
+    </body>
+</html>

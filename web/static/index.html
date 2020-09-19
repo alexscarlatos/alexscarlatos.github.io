@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                // Load images for photography section
+                loadPhotoGrid("#photography", "Portfolio");
+            });
+        </script>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div id="tabs">
+                <div class="tab">
+                    <a href="#" onclick="openSection('#about', $(this));" class="selected">About</a>
+                </div>
+                |
+                <div class="tab">
+                    <a href="#" onclick="openSection('#software', $(this));">Software</a>
+                </div>
+                |
+                <div class="tab">
+                    <a href="#" onclick="openSection('#music', $(this));">Music</a>
+                </div>
+                |
+                <div class="tab">
+                    <a href="#" onclick="openSection('#photography', $(this));">Photography</a>
+                </div>
+                |
+                <div class="tab">
+                    <a href="#" onclick="openSection('#videography', $(this));">Videography</a>
+                </div>
+                <hr>
+            </div>
+
+            <div id="sectionContainer">
+                <div class="section" id="about">
+                    <div id="titleContent">
+                        <div>
+                            <img id="profileImg" src="images/Profile3.jpg" width="450" height="300"/>
+                        </div>
+                        <div id="titleAndBio">
+                            <h1>Alex Scarlatos</h1>
+                            <div class="flex-stretch">
+                                <p><a href="https://github.com/alexscarlatos" target="_blank">GitHub</a></p>
+                                <p><a href="https://www.linkedin.com/in/alex-scarlatos-399455113/" target="_blank">LinkedIn</a></p>
+                                <p><a href="documents/Resume.pdf" target="_blank">Resume</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        My goal is to leverage software and art to make the world a better place.
+                        My passions are coding, teaching/mentoring, writing music, playing the classics on piano, and making movies.
+                        Some things I'm proud of over the last few years are my work at Bloomberg,
+                        my time teaching with <a href="https://codenation.org/" target="_blank">Code Nation</a>,
+                        the projects I completed while getting my MS at Stony Brook, and the last 2 short films I worked on.
+                        I also enjoy traveling the country with my amazing fiancé.
+                        <br>
+                        <br>
+                        Software Engineer at Bloomberg L.P.
+                        <br>
+                        BS/MS in Computer Science at Stony Brook University.
+                    </p>
+
+                    <hr>
+
+                    <h2 class="about-header">Experience</h2>
+                    <div class="list-item">
+                        <div class="flex-stretch">
+                            <h2 class="about-sub-header">Bloomberg L.P.</h2>
+                            <p class="bold">2018-Present</p>
+                        </div>
+                        <div class="list-item-content">
+                            <div>
+                                <img src="images/Bloomberg.jpg" width="100" height="100" />
+                            </div>
+                            <div>
+                                <p>
+                                    At Bloomberg, I work in the real-time enterprise data department as a full stack software engineer.
+                                    Most recently, my team revamped our whole workflow on a modern web stack (React/Flask/Postgres), where I was integral in both the development
+                                    and design of the new architecture. I've also been heavily involved in developing and designing
+                                    tools for continuous integration and continuous deployment (CI/CD), such as automated release systems
+                                    and credential management frameworks, to make releasing code easier and more secure. I've mentored 3 incoming team members
+                                    by teaching them our business logic, helping them learn them new technologies, and guiding them on projects.
+                                    I have also given multiple presentations and live demos to both engineering and business teams.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="flex-stretch">
+                            <h2 class="about-sub-header">Applied Visions</h2>
+                            <p class="bold">2016-2017</p>
+                        </div>
+                        <div class="list-item-content">
+                            <div>
+                                <img src="images/AVI.png" width="100" height="100" />
+                            </div>
+                            <div>
+                                <p>
+                                    AVI is a software contracting company I interned at as a software engineer.
+                                    I've worked on a variety of projects that involved manipulating data sets, building data visualization tools and developing software for the web.
+                                    In addition to development, I worked closely with other employees on project planning.
+                                    I participated in scrum meetings, sprint meetings, and gave presentations to co-workers on research and progress.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="flex-stretch">
+                            <h2 class="about-sub-header">Eduware</h2>
+                            <p class="bold">2014-2015</p>
+                        </div>
+                        <div class="list-item-content">
+                            <div>
+                                <img src="images/Eduware.png" width="100" height="100" />
+                            </div>
+                            <div>
+                                <p>
+                                    Eduware is a small shop that develops exam-building software for secondary school teachers.
+                                    I was a part-time web developer, working on the software's front-end, server and database within Microsoft's ASP.NET framework.
+                                    I also worked on smaller projects using Flash and Unity3D.
+                                    The company was the first major experience I had developing software and I owe them for getting me an early start in the field.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                    <hr>
+
+                    <h2 class="about-header">Skills</h2>
+                    <div class="list-item">
+                        <h2 class="about-sub-header">Programming</h2>
+                        <div class="list-item-content">
+                            <ul>
+                            <li>Full Stack Web Development</li>
+                            <li>Game Programming, primarily in Unity</li>
+                            <li>Data Statistics and Visualization</li>
+                            <li>Network Programming (Sockets)</li>
+                            <li>Neural Network Design</li>
+                            <li>Languages: <em>Javascript, Python, SQL, C++, C, C#, Prolog, Arduino</em></li>
+                            <li>APIs: <em>React/Redux, Flask, ASP.NET, AngularJS, ThreeJS, D3JS, TensorFlow</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <h2 class="about-sub-header">Music</h2>
+                        <div class="list-item-content">
+                            <ul>
+                            <li>Audio Mixing and Engineering (GarageBand, Logic Pro)</li>
+                            <li>Piano Performance</li>
+                            <li>Music Composition</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <h2 class="about-sub-header">Visual Art</h2>
+                        <div class="list-item-content">
+                            <ul>
+                            <li>Photography and Cinematography</li>
+                            <li>Video Editing (Final Cut Pro)</li>
+                            <li>Image Editing (Photoshop)</li>
+                            </ul>
+                        </div>
+                    </div>
+                                    -->
+
+                </div>
+                <div class="section" id="software" style="display:none;">
+                    <div class="list-item">
+                        <h2><a href="documents/Sonify Undergraduate Final Presentation.pdf" target="_blank">Sonify</a></h2>
+                        <div class="list-item-content">
+                            <div>
+                                <a href="documents/Sonify Undergraduate Final Presentation.pdf" target="_blank">
+                                    <img src="images/Sonify.png" width="170" height="170" />
+                                </a>
+                            </div>
+                            <div>
+                                <p>
+                                    I developed this project for my undergraduate senior thesis and continued work on it for my Master's project.
+                                    It's a tool for exploring the possibilities of sound design through spatial manipulation.
+                                    Users move sound emitting and receiving objects through a room and draw sound barriers, hearing how the soundscape changes as they
+                                    interact with the space.
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+                    <hr>
+                    <div class="list-item">
+                        <h2><a href="cryptoclash.html" target="_blank">CryptoCLASH</a></h2>
+                        <div class="list-item-content">
+                            <div>
+                                <a href="cryptoclash.html" target="_blank">
+                                    <img src="images/CryptoClash.png" width="267" height="150" />
+                                </a>
+                            </div>
+                            <div>
+                                <p>
+                                    A multiplayer board game, centered around the vulnerabilities of digital currency.
+                                    The game is meant to be a tool to educate on capitalism in a digital world, as well as examine behaviors of players under certain conditions.
+                                    I built the game with two friends: Joshua Cehulic, who designed the game, and Marisa DePasquale, who created the assets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                        <h2>Depth Charge 3D</h2>
+                        <div class="list-item-content">
+                            <div>
+                                <img src="images/DepthCharge.png" width="196" height="147" />
+                            </div>
+                            <div>
+                                <p>
+                                    A vehicle combat game that utilizes ChromaDepth glasses to create an immersive 3D experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                        <h2><a href="synth.html" target="_blank">Hybrid Synthesizer</a></h2>
+                        <div class="list-item-content">
+                            <div>
+                                <a href="synth.html" target="_blank">
+                                    <img src="images/Synth.jpg" width="170" height="170" />
+                                </a>
+                            </div>
+                            <div>
+                                <p>
+                                    A digital/analog hybrid, MIDI-controlled synthesizer, built with an Arduino microcontroller.
+                                    Users can choose the wave generation function and modify envelope settings to achieve unique sounds.
+                                    I wrote the code, and the electrical engineering was done by Collin Champagne.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                        <h2><a href="imagequilting.html" target="_blank">Image Quilting</a></h2>
+                        <div class="list-item-content">
+                            <div>
+                                <a href="imagequilting.html" target="_blank">
+                                    <img src="images/ImageQuilting.jpg" width="267" height="150" />
+                                </a>
+                            </div>
+                            <div>
+                                <p>
+                                    A program that, given a source texture, extends the texture or renders a target image using that texture.
+                                    The algorithm originates in the 2001 paper "Image Quilting for Texture Synthesis and Transfer" by Alexei A. Efros and William T. Freeman.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section" id="music" style="display:none;">
+                    <div class="list-item">
+                        <h2>Solo Compositions</h2>
+                        <div class="list-item-content">
+                            <div>
+                                <img src="images/AloneInDecember.jpg" width="170" height="170" />
+                            </div>
+                            <div>
+                                <p>
+                                    I've been writing various, unassociated compositions since my Freshman year of college.
+                                    The pieces range in style from EDM to Metal to Experimental.
+                                    My Soundcloud can be found <a target="_blank" href="https://soundcloud.com/aloneindecember">here</a>, for which I go under the name AloneInDecember.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                        <h2>Growth</h2>
+                        <div class="list-item-content">
+                            <div>
+                                <img src="images/Growth.jpg" width="170" height="170" />
+                            </div>
+                            <div>
+                                <p>
+                                    During Summer 2015, I co-created a 53 minute album with my friend Shea Glasheen, which was later released on Codex Rag Records.
+                                    It spans a variety of genres, from alternative rock to experimental electronica.
+                                    My primary role for the album was production and mixing, though I did some composition and performance as well.
+                                    The Bandcamp for the album can be found <a target="_blank" href="https://codexrag.bandcamp.com/album/growth">here</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section centered" id="photography" style="display:none;">
+                </div>
+
+                <div class="section centered" id="videography" style="display:none;">
+                    <p>
+                        As a cinematographer, editor, and sound designer, I've been working with the same incredible film team since 2014.
+                        Since we started, we've created a catalog short films, as well as produced a variety of music videos and event videos. Our most recent film,
+                        <a href="https://www.imdb.com/title/tt9613032/" target="_blank">Miss Freelance</a>, screened in 5 film festivals accross New York City, won 4 awards,
+                        and received 30+ reviews from critics.
+                    </p>
+                    <iframe src="https://player.vimeo.com/video/455362133" width="533" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <hr>
+                    <iframe src="https://player.vimeo.com/video/342904617" width="533" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <hr>
+                    <iframe width="533" height="300" src="https://www.youtube.com/embed/Y35LaeZw97Q" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <iframe width="533" height="300" src="https://www.youtube.com/embed/6pzW6xCj3XY" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <div id="footer">
+                Copyright 2018 Alex Scarlatos
+            </div>
+
+            <div id="imgModal" class="modal" onclick="imgModalClose()">
+                <span class="close" onclick="imgModalClose()">&times;</span>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modal-larr" onclick="imgScroll(-1)">&larr;</span>
+                        <span class="modal-rarr" onclick="imgScroll(1)">&rarr;</span>
+                    </div>
+                    <div class="modal-body">
+                        <i class="fa fa-angle-left"></i>
+                        <img class="modalImg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
