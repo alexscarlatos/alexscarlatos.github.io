@@ -11,15 +11,30 @@
     <body>
         <h1 style="text-align: center;">Sonify</h1>
         <div class="mainContainer">
-            <div id="tabs">
+            <!-- <div id="tabs">
                 <div class="tab">
-                    <a href="#" onclick="openSection('#documents', $(this));" class="selected">Documents</a>
+                    <a href="#" onclick="openSection('#videos', $(this));" class="selected">Videos</a>
                 </div>
-            </div>
+                |
+                <div class="tab">
+                    <a href="#" onclick="openSection('#documents', $(this));">Documents</a>
+                </div>
+            </div> -->
             <div id="sectionContainer">
-                <div class="section centered" id="documents">
-                    <h2 class="document"><a href="documents/Sonify Abstract.pdf" target="_blank">Abstract</a></h2>
+                <div class="section centered" id="all">
+                    Sonify was the project I developed for my Undergraduate and Master's projects at Stony Brook University. It's an audio application where users
+                    interact with a virtual space by dragging and drawing, which ends up effecting different audio tracks with a variety of effects, in real time.
+                    I developed a novel algorithm for it, which is loosely based on acoustic properties like reflection and attenuation,
+                    that converts the objects in the space to a full audio mix.
+                    During the Master's portion of the work, I conducted two usability studies and wrote a paper on the concept, implementation, and study results, which now lives
+                    on arXiv. Also, I refer to the project as "Sonispace" in the paper, for a more techincal-sounding name.
+                    <h2 class="document"><a href="https://arxiv.org/abs/2009.14268" target="_blank">Technical Paper on arXiv</a></h2>
+                    <!-- <h2 class="document"><a href="documents/Sonify Abstract.pdf" target="_blank">Abstract</a></h2> -->
                     <h2 class="document"><a href="documents/Sonify Undergraduate Final Presentation.pdf" target="_blank">Undergraduate Thesis Presentation</a></h2>
+                    <p>
+                        I made this video for the usability experiment, but it serves as a decent overview of the app's features.
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WWau5UCgupo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div id="footer">

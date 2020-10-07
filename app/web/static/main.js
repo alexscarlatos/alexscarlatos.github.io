@@ -9,17 +9,9 @@ function openSection(id, clickedItem) {
 function loadPhotoList(sectionID, identifier) {
     var photoSection = $(sectionID);
     $.getJSON("photos.json", function(e) {
-        e[identifier].forEach(function(src) {
-            if (src.substring(0, 1) != "_") {
-                var width = 450, height = 300;
-                var whMatches = src.match(/w(\d+)h(\d+)/);
-                if (whMatches) {
-                    width = whMatches[1];
-                    height = whMatches[2];
-                }
-                
-                photoSection.append("<img src='images/" + identifier + "/" + src + "' width='" + width + "' height='" + height + "' />");
-            }
+        e[identifier].forEach(function(imgInfo) {
+            let width = imgInfo.width || 450, height = imgInfo.height || 300;
+            photoSection.append(`<img src='${imgInfo.url}' width='${width}' height='${height}' />`);
         });
     });
 }
@@ -28,35 +20,21 @@ var currentImgList;
 var currentImgIndex;
 
 function loadPhotoGrid(sectionID, identifier) {
+    const smallWidth = 150, smallHeight = 100, bigWidth = 900, bigHeight = 600;
     var photoSection = $(sectionID);
     $.getJSON("photos.json", function(e) {
         currentImgList = [];
-        var i = 0;
-        e[identifier].forEach(function(src) {
-            if (src.substring(0, 1) != "_") {
-                var width = 150, height = 100;
-                var bigWidth = 600, bigHeight = 400;
-                var whMatches = src.match(/w(\d+)h(\d+)/);
-                if (whMatches) {
-                    bigWidth = whMatches[1];
-                    bigHeight = whMatches[2];
-                }
-
-                src = "images/" + identifier + "/" + src;
-
-                currentImgList.push({ src: src, width: bigWidth, height: bigHeight });
-                photoSection.append("<img class='img-icon' src='" + src
-                    + "' width='" + width + "' height='" + height
-                    + "' onclick='imgPopup(" + i + ")' />");
-                i++;
-            }
+        e[identifier].forEach(function(imgInfo, i) {
+            const src = imgInfo.url;
+            currentImgList.push({ src: src, width: bigWidth, height: bigHeight });
+            photoSection.append(`<img class='img-icon' src='${src}' width='${smallWidth}' height='${smallHeight}' onclick='imgPopup(${i})' />`);
         });
     });
 }
 
 function imgPopup(index) {
     currentImgIndex = index;
-    $("#imgModal").fadeIn();
+    $("#imgModal").fadeIn(200);
     setModalImg();
 }
 

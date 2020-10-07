@@ -1,5 +1,5 @@
 body {
-    background-image: url('./images/bg.jpeg');
+    background-image: url('https://ajscarlatos.s3.us-east-2.amazonaws.com/bg.jpeg');
     color: #222;
     font-family: "Times New Roman", Times, serif;
     text-align: center;

@@ -1,18 +1,16 @@
 - Add section for papers (ones written during masters)
-- Add link to personal github and stats project github
-    - Add master's projects to github
-- Add links to movies, mention awards
-- Make whole thing look friendlier
+- Link to stats project github
+- Add master's projects to github
 - Add piano performances if possible
 - Add more photos
-- Make photos bigger, and fade is too slow
-- Refactor photo json (don't put sizes and exlusions in file names you dingus)
-- Deploy on AWS https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html
-- Should we get rid of the Skills section?
 - Depth Charge links
-- Add more to Sonify (paper? video?)
+- Fix Sonify page
 - Add filmio to the list
 - Create mk file for image quilting
 - Use web templates for rendering
-- Latest version of CryptoClash
+- Latest version of CryptoClash, and upload to ec2 or s3
 - Put synthesizer code on GitHub
+- More image quilting examples
+- Lower res images for faster loading
+- Get rid of hello world
+- Put documents on s3 (or just GitHub)
