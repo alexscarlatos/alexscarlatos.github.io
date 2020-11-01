@@ -6,5 +6,5 @@ application = Flask(__name__,
             template_folder='web/templates')
 
 @application.route('/')
-def hello_world():
-    return 'Hello, World!'
+def home():
+    return application.send_static_file('index.html')

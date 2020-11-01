@@ -7,10 +7,8 @@
 - Fix Sonify page
 - Add filmio to the list
 - Create mk file for image quilting
+- Add image quilting paper to GH
 - Use web templates for rendering
 - Latest version of CryptoClash, and upload to ec2 or s3
-- Put synthesizer code on GitHub
 - More image quilting examples
 - Lower res images for faster loading
-- Get rid of hello world
-- Put documents on s3 (or just GitHub)
