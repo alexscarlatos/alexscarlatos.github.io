@@ -6,7 +6,10 @@
         <script src="main.js"></script>
         <script type="text/javascript">
             $(function() {
-                loadPhotoList("#examples", "ImageQuilting");
+                loadPhotoList("#examples-section", "ImageQuilting");
+
+                window.onhashchange = hashChanged;
+                hashChanged();
             });
         </script>
     </head>
@@ -15,7 +18,7 @@
         <div class="mainContainer">
             <div id="tabs">
                 <div class="tab image-quilting-imgs">
-                    <a href="#" onclick="openSection('#examples', $(this));" class="selected">Examples</a>
+                    <a href="#examples" class="examples selected">Examples</a>
                 </div>
                 |
                 <div class="tab">
@@ -23,7 +26,7 @@
                 </div>
             </div>
             <div id="sectionContainer">
-                <div class="section centered" id="examples"></div>
+                <div class="section centered" id="examples-section"></div>
             </div>
             <div id="footer">
                 Copyright 2020 Alex Scarlatos

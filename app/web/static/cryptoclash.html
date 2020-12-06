@@ -5,7 +5,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="main.js"></script>
         <script type="text/javascript">
-            $(function() {});
+            $(function() {
+                window.onhashchange = hashChanged;
+                hashChanged();
+            });
         </script>
     </head>
     <body>
@@ -13,7 +16,7 @@
         <div class="mainContainer">
             <div id="tabs">
                 <div class="tab">
-                    <a href="#" onclick="openSection('#trailer', $(this));" class="selected">Trailer</a>
+                    <a href="#trailer" class="trailer selected">Trailer</a>
                 </div>
                 <!--
                 |
@@ -27,18 +30,15 @@
                 </div>
                 |
                 <div class="tab">
-                    <a href="#" onclick="openSection('#documents', $(this));">Documents</a>
+                    <a href="#documents" class="documents">Documents</a>
                 </div>
             </div>
             <div id="sectionContainer">
-                <div class="section centered" id="screenshots" style="display:none;">
-                </div>
-
-                <div class="section centered" id="trailer">
+                <div class="section centered" id="trailer-section">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/r_C2UMwRceE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
-                <div class="section centered" id="documents"  style="display:none;">
+                <div class="section centered" id="documents-section"  style="display:none;">
                     <h2 class="document"><a href="https://ajscarlatos.s3.us-east-2.amazonaws.com/CryptoClash+Abstract.pdf" target="_blank">Abstract</a></h2>
                     <h2 class="document"><a href="https://ajscarlatos.s3.us-east-2.amazonaws.com/CryptoClash+Poster.pdf" target="_blank">Poster</a></h2>
                 </div>

@@ -6,6 +6,13 @@ function openSection(id, clickedItem) {
     $(id).fadeIn();
 }
 
+function hashChanged() {
+    const hash = window.location.hash;
+    if (hash) {
+        openSection(window.location.hash + "-section", $("." + hash.substring(1)));
+    }
+}
+
 function loadPhotoList(sectionID, identifier) {
     var photoSection = $(sectionID);
     $.getJSON("photos.json", function(e) {

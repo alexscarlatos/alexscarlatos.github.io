@@ -6,7 +6,10 @@
         <script src="main.js"></script>
         <script type="text/javascript">
             $(function() {
-                loadPhotoList("#pictures", "Synth");
+                loadPhotoList("#pictures-section", "Synth");
+
+                window.onhashchange = hashChanged;
+                hashChanged();
             });
         </script>
     </head>
@@ -15,11 +18,11 @@
         <div class="mainContainer">
             <div id="tabs">
                 <div class="tab">
-                    <a href="#" onclick="openSection('#pictures', $(this));" class="selected">Pictures</a>
+                    <a href="#pictures" class="pictures selected">Pictures</a>
                 </div>
                 |
                 <div class="tab">
-                    <a href="#" onclick="openSection('#videos', $(this));">Videos</a>
+                    <a href="#videos" class="videos">Videos</a>
                 </div>
                 |
                 <div class="tab">
@@ -27,10 +30,10 @@
                 </div>
             </div>
             <div id="sectionContainer">
-                <div class="section centered" id="pictures">
+                <div class="section centered" id="pictures-section">
                 </div>
 
-                <div class="section centered" id="videos" style="display:none;">
+                <div class="section centered" id="videos-section" style="display:none;">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/FhELPgn3KO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
