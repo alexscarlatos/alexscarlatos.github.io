@@ -9,7 +9,7 @@ function openSection(id, clickedItem) {
 function hashChanged() {
     const hash = window.location.hash;
     if (hash) {
-        openSection(window.location.hash + "-section", $("." + hash.substring(1)));
+        openSection(hash + "-section", $("." + hash.substring(1)));
     }
 }
 
