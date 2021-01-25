@@ -208,21 +208,18 @@ ul {
 .list-item-content p {
     margin-top: 0;
 }
-.list-item a {
-    //color: cyan;
-}
+
 .list-item h2 a {
     color: #222;
     text-decoration: none;
 }
 
 .about-header {
+    font-size: 26px;
     text-align: center;
-    font-size: 24px;
+    text-decoration: underline;
 }
-.about-sub-header {
-    //text-align: left !important;
-}
+
 ul {
     margin: 0 0 0 0;
 }
