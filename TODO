@@ -1,5 +1,4 @@
-- Run on ec2
-- Domain name
+- jinja2 vulnerability
 - Devgames demos
 - Add piano performances
 - Add more photos
@@ -11,6 +10,4 @@
 - More image quilting examples
 - Lower res images for faster loading
 - Different cover photo, smiling perhaps
-- Update resume
-- favicon
 - Categories for software projects (Games, Audio, Data Science, Networking, Graphics)
