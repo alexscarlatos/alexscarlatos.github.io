@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="240_rlo.js"></script>
+        <style>
+            body {
+                margin: auto;
+                max-width: 1200px;
+            }
+
+            #title {
+                text-align: center;
+            }
+
+            #title h1 {
+                color: red;
+            }
+
+            #top {
+                display: flex;
+            }
+
+            #scenario {
+                height: 100%;
+            }
+        
+            .problem-description {
+                border-right: black 1px solid;
+                padding-right: 20px;
+                margin: 0 20px 0 20px;
+                max-width: 50%;
+            }
+
+            img {
+                margin: 10px;
+                padding: 5px;
+            }
+        
+            img.selected {
+                border: yellow 3px solid;
+            }
+        
+            button {
+                font-size: 18px;
+                margin-top: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='title'>
+            <h1>The Probabilistic Dungeon Crawler</h1>
+            <button id='start'>Start!</button>
+        </div>
+        <div id='scenario' style='display: none;'></div>
+        <div id='results' style='display: none;'>
+            <h1 id='answer'></h1>
+            <div id='explanation'></div>
+            <button id='next-scenario'>Keep going!</button>
+            <h1 id='finish-prompt'></h1>
+            <p id='form-link' style='display: none;'>
+                Please fill out
+                <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLScnUNNRB-hawrynjXUG8A4JUxFL5Uld7ibQTweKvQ5kOTciFg/viewform'>this quick survey</a>!
+            </p>
+        </div>
+    </body>
+</html>

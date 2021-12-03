@@ -1,13 +1,13 @@
 - jinja2 vulnerability
+- Use web templates for rendering
+- Categories for software projects (Games, Audio, Data Science, Networking, Graphics)
 - Devgames demos
 - Add piano performances
 - Add more photos
 - Publish depth charge stuff
 - Create mk file for image quilting
 - Add image quilting paper to GH
-- Use web templates for rendering
-- Latest version of CryptoClash, and upload to ec2 or s3
 - More image quilting examples
+- Latest version of CryptoClash, and upload to ec2 or s3
 - Lower res images for faster loading
 - Different cover photo, smiling perhaps
-- Categories for software projects (Games, Audio, Data Science, Networking, Graphics)
