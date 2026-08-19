@@ -8,8 +8,9 @@
         <script type="text/javascript">
             $(function() {
                 // Load images for photography section
-                loadPhotoGrid("#photography-section", "Portfolio");
+                // loadPhotoGrid("#photography-section", "Portfolio");
 
+                // Handle tab clicks
                 window.onhashchange = hashChanged;
                 hashChanged();
             });
@@ -23,20 +24,24 @@
                 </div>
                 |
                 <div class="tab">
+                    <a href="#research" class="research">Research</a>
+                </div>
+                |
+                <div class="tab">
                     <a href="#software" class="software">Software</a>
                 </div>
                 |
                 <div class="tab">
                     <a href="#music" class="music">Music</a>
                 </div>
-                |
+                <!-- |
                 <div class="tab">
                     <a href="#photography" class="photography">Photography</a>
                 </div>
                 |
                 <div class="tab">
                     <a href="#videography" class="videography">Videography</a>
-                </div>
+                </div> -->
                 <hr>
             </div>
 
@@ -50,41 +55,97 @@
                         <div id="titleAndBio">
                             <h1>Alex Scarlatos</h1>
                             <div class="flex-stretch">
-                                <p><a href="https://github.com/alexscarlatos" target="_blank">GitHub</a></p>
+                                <p><a href="https://scholar.google.com/citations?user=9dVKHM0AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+                                <p><a href="https://github.com/umass-ml4ed" target="_blank">ML4Ed GitHub</a></p>
+                                <p><a href="https://github.com/alexscarlatos" target="_blank">Personal GitHub</a></p>
                                 <p><a href="https://www.linkedin.com/in/alex-scarlatos-399455113/" target="_blank">LinkedIn</a></p>
-                                <p><a href="https://ajscarlatos.s3.us-east-2.amazonaws.com/Resume+Full+2021.pdf" target="_blank">Resume</a></p>
+                                <p><a href="CV.pdf" target="_blank">CV</a></p>
+                                <p><a href="Dissertation.pdf" target="_blank">Dissertation</a></p>
+                                <!-- <p><a href="https://ajscarlatos.s3.us-east-2.amazonaws.com/Resume+Full+2022.pdf" target="_blank">Resume</a></p> -->
                             </div>
                         </div>
                     </div>
 
                     <p>
-                        My goal is to leverage software, art and education for the betterment of society.
-                        I'm a first year PhD student at UMass Amherst, working with
-                        <a href="https://www.cics.umass.edu/people/lan-andrew" target="_blank">Dr. Andrew Lan</a>
-                        on applying machine learning to challenges in education.
-                        My passions are coding, teaching/mentoring, writing music, playing the classics on piano, and making movies.
-                        Some things I'm proud of over the last few years are my work at Bloomberg,
-                        my time teaching with <a href="https://codenation.org/" target="_blank">Code Nation</a>,
-                        the projects I completed while getting my MS at Stony Brook, and the last 2 short films I worked on.
-                        I also enjoy traveling the country with my amazing fiancé.
-                        <br>
-                        <br>
-                        BS/MS in Computer Science at Stony Brook University.
+                        I'm a PhD candidate at the University of Massachusetts Amherst, working with
+                        <a href="https://people.umass.edu/~andrewlan/" target="_blank">Dr. Andrew Lan</a>
+                        in the Machine Learning for Education (ML4Ed) lab.
+                        My research augments large language models (LLMs) with student-centered objectives
+                        to enable high quality and personalized educational AI systems.
+                        My recent work achieves this goal via methods for faithfully simulating student behavior using LLMs,
+                        which inform rewards or other signals for AI teachers.
                     </p>
+                    <p>
+                        I have published papers in NLP (ACL, EMNLP, NAACL) and education (AIED, LAK, EDM) conferences, but am also
+                        interested more broadly in machine learning, reinforcement learning, and musical applications of AI.
+                        I received my BS/MS in Computer Science from Stony Brook University, where I focused on musical interfaces
+                        and game development.
+                        Outside of research, my passions are writing and playing music, cinematography and photography,
+                        rock climbing, hiking, Chess, and video games.
+                    </p>
+
+                    <!-- <hr>
+
+                    <h2 class="about-header">News</h2>
+                    <div class="news">
+                        <ul>
+                            <li>
+                                Our paper "Improving the Validity of Automatically Generated Feedback via Reinforcement Learning"
+                                received the <a href="https://www.cics.umass.edu/news/cics-researchers-recognized-aied-2024" target="_blank">best student paper award at AIED 2024</a>!
+                            </li>
+                            <li>
+                                Our team <a href="https://www.umass.edu/news/article/team-umass-amherst-computer-scientists-wins-top-prize-mathematics-automated-scoring" target="_blank">won the top prize</a>
+                                in the 2023 Math Automated Scoring Challenge, hosted by the National Center for Education Statistics.
+                            </li>
+                        </ul>
+                    </div> -->
 
                     <hr>
 
                     <h2 class="about-header">Experience</h2>
                     <div class="list-item">
                         <div class="centered">
-                            <h2>University of Massachusetts - Amherst</h2>
+                            <h2>University of Massachusetts Amherst</h2>
                             <p class="bold">2021-Present</p>
                         </div>
                         <div class="list-item-content">
                             <div>
                                 <p>
-                                    I'm currently a TA for CS 240 - Reasoning Under Uncertainty (i.e. Probability Theory).
-                                    I'm also working on research to build machine learning models that will assist in student evaluation.
+                                    I've been a research assistant in the ML4Ed lab, where I've primarily been researching
+                                    LLM applications to tasks in mathematics education.
+                                    See my Research page for the list of papers I've published during my time here.
+                                    I have also been a teaching associate for a freshman seminar on generative AI and
+                                    a teaching assistant for CS 240 - Reasoning Under Uncertainty (Probability Theory).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="centered">
+                            <h2>Cambium Assessment</h2>
+                            <p class="bold">2025</p>
+                        </div>
+                        <div class="list-item-content">
+                            <div>
+                                <p>
+                                    I was a research intern where I developed a simulated student method for estimating
+                                    the difficulty of open-ended assessment questions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="centered">
+                            <h2>Google DeepMind</h2>
+                            <p class="bold">2023-2024</p>
+                        </div>
+                        <div class="list-item-content">
+                            <div>
+                                <p>
+                                    I was a student researcher on the amazing Magenta team, working with
+                                    <a href="https://research.google/people/anna-huang/" target="_blank">Dr. Anna Huang</a>.
+                                    During my time there, I built an interface for real-time musical jamming between
+                                    humans and AI on the piano.
                                 </p>
                             </div>
                         </div>
@@ -100,13 +161,13 @@
                             </div> -->
                             <div>
                                 <p>
-                                    At Bloomberg, I work in the real-time enterprise data department as a full stack software engineer.
-                                    Most recently, my team revamped our whole workflow on a modern web stack (React/Flask/Postgres), where I was integral in both the development
-                                    and design of the new architecture. I've also been involved in developing and designing
+                                    At Bloomberg, I worked in the real-time enterprise data department as a full stack software engineer.
+                                    My team revamped our whole workflow on a modern web stack (React/Flask/Postgres), where I was integral in both the development
+                                    and design of the new architecture. I was also involved in developing and designing
                                     tools for continuous integration and continuous deployment (CI/CD), such as automated release systems
-                                    and credential management frameworks, to make releasing code easier and more secure. I've mentored 3 incoming team members
-                                    by teaching them our business logic, helping them learn them new technologies, and guiding them on projects.
-                                    I have also given multiple presentations and live demos to both engineering and business teams.
+                                    and credential management frameworks, to make releasing code easier and more secure. I mentored 3 incoming team members
+                                    by teaching them our business logic, helping them learn new technologies, and guiding them on projects.
+                                    I also gave multiple presentations and live demos to both engineering and business teams.
                                 </p>
                             </div>
                         </div>
@@ -189,8 +250,135 @@
                         </div>
                     </div>
                     -->
-
                 </div>
+
+                <div class="section" id="research-section" style="display:none;">
+                    <h2>Selected Papers</h2>
+                    <ul>
+                        <li>
+                            <a href="https://aclanthology.org/2026.acl-long.1960/" target="_blank">Simulated Students in Tutoring Dialogues: Substance or Illusion?</a>
+                            <br/><b>ACL 2026</b>
+                            <br/><span><em>Alexander Scarlatos</em>, Jaewook Lee, Simon Woodhead, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://aclanthology.org/2025.emnlp-main.1274/" target="_blank">SMART: Simulated Students Aligned with Item Response Theory for Question Difficulty Prediction</a>
+                            <br/><b>EMNLP 2025</b>
+                            <br/><span><em>Alexander Scarlatos</em>, Nigel Fernandez, Christopher Ormerod, Susan Lottridge, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/abs/2503.06424" target="_blank">Training LLM-based Tutors to Improve Student Learning Outcomes in Dialogues</a>
+                            <br/><b>AIED 2025</b>
+                            <br/><span><em>Alexander Scarlatos</em>, Naiming Liu, Jaewook Lee, Richard Baraniuk, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://dl.acm.org/doi/10.1145/3706468.3706501" target="_blank">Exploring Knowledge Tracing in Tutor-Student Dialogues using LLMs</a>
+                            <br/><b>LAK 2025</b>
+                            <br/><span><em>Alexander Scarlatos</em>, Ryan S. Baker, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://aclanthology.org/2024.emnlp-main.512/" target="_blank">DiVERT: Distractor Generation with Variational Errors Represented as Text for Math Multiple-choice Questions</a>
+                            <br/><b>EMNLP 2024</b>
+                            <br/><span>Nigel Fernandez*, <em>Alexander Scarlatos</em>*, Wanyong Feng, Simon Woodhead, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/abs/2403.01304" target="_blank">Improving the Validity of Automatically Generated Feedback via Reinforcement Learning</a>
+                            <br/><b>AIED 2024 (Best student paper award)</b>
+                            <br/><span><em>Alexander Scarlatos</em>, Digory Smith, Simon Woodhead, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://aclanthology.org/2023.acl-long.205" target="_blank">Tree-Based Representation and Generation of Natural and Mathematical Language</a>
+                            <br/><b>ACL 2023</b>
+                            <br/><span><em>Alexander Scarlatos</em>, Andrew Lan</span>
+                        </li>
+                    </ul>
+
+                    <h2>Other Papers</h2>
+                    <ul>
+                        <li>
+                            <a href="https://aclanthology.org/2026.bea-1.43/" target="_blank">Interpretable Difficulty-Aware Knowledge Tracing in Tutor-Student Dialogues</a>
+                            <br/><b>BEA (ACL Workshop) 2026</b>
+                            <br/><span>Shuyan Huang, <em>Alexander Scarlatos</em>, Jaewook Lee, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://aclanthology.org/2026.bea-1.7/" target="_blank">Letting Tutor Personas "Speak Up" for LLMs: Learning Steering Vectors from Dialogue via Preference Optimization</a>
+                            <br/><b>BEA (ACL Workshop) 2026</b>
+                            <br/><span>Jaewook Lee, <em>Alexander Scarlatos</em>, Simon Woodhead, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/abs/2507.05137" target="_blank">Interpretable Mnemonic Generation for Kanji Learning via Expectation-Maximization</a>
+                            <br/><b>EMNLP 2025</b>
+                            <br/><span>Jaewook Lee, <em>Alexander Scarlatos</em>, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://aclanthology.org/2025.bea-1.23/" target="_blank">LookAlike: Consistent Distractor Generation in Math MCQs</a>
+                            <br/><b>BEA (ACL Workshop) 2025</b>
+                            <br/><span>Nisarg Parikh, <em>Alexander Scarlatos</em>*, Nigel Fernandez*, Simon Woodhead, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://aclanthology.org/2025.bea-1.55/" target="_blank">Exploring LLMs for Predicting Tutor Strategy and Student Outcomes in Dialogues</a>
+                            <br/><b>BEA (ACL Workshop) 2025</b>
+                            <br/><span>Fareya Ikram, <em>Alexander Scarlatos</em>, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/abs/2502.21267" target="_blank">ReaLJam: Real-Time Human-AI Music Jamming with Reinforcement Learning-Tuned Transformers</a>
+                            <br/><b>CHI 2025 LBW</b>
+                            <br/><span><em>Alexander Scarlatos</em>, Yusong Wu, Ian Simon, Adam Roberts, Tim Cooijmans, Natasha Jaques, Cassie Tarakajian, Cheng-Zhi Anna Huang</span>
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/abs/2411.05231" target="_blank">Evaluating GPT-4 at Grading Handwritten Solutions in Math Exams</a>
+                            <br/><b>LAK 2025</b>
+                            <br/><span>Adriana Caraeni, <em>Alexander Scarlatos</em>, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://aclanthology.org/2024.acl-long.557/" target="_blank">SyllabusQA: A Course Logistics Question Answering Dataset</a>
+                            <br/><b>ACL 2024</b>
+                            <br/><span>Nigel Fernandez, <em>Alexander Scarlatos</em>, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://proceedings.mlr.press/v235/wu24c.html" target="_blank">Adaptive Accompaniment with ReaLchords</a>
+                            <br/><b>ICML 2024</b>
+                            <br/><span>Yusong Wu, Tim Cooijmans, Kyle Kastner, Adam Roberts, Ian Simon, <em>Alexander Scarlatos</em>, Chris Donahue, Cassie Tarakajian, Shayegan Omidshafiei, Aaron Courville, Pablo Samuel Castro, Natasha Jaques, Cheng-Zhi Anna Huang</span>
+                        </li>
+                        <li>
+                            <a href="https://aclanthology.org/2024.bea-1.19/" target="_blank">Improving Automated Distractor Generation for Math Multiple-choice Questions with Overgenerate-and-rank</a>
+                            <br/><b>BEA (NAACL Workshop) 2024</b>
+                            <br/><span><em>Alexander Scarlatos</em>*, Wanyong Feng*, Digory Smith, Simon Woodhead, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://aclanthology.org/2024.findings-naacl.193/" target="_blank">Exploring Automated Distractor Generation for Math Multiple-choice Questions via Large Language Models</a>
+                            <br/><b>NAACL 2024 Findings</b>
+                            <br/><span>Wanyong Feng*, Jaewook Lee*, Hunter McNichols*, <em>Alexander Scarlatos</em>*, Digory Smith, Simon Woodhead, Nancy Otero Ornelas, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://gaied.org/neurips2023/files/10/10_paper.pdf" target="_blank">Automated Distractor and Feedback Generation for Math Multiple-choice Questions via In-context Learning</a>
+                            <br/><b>GAIED (NeurIPS Workshop) 2023</b>
+                            <br/><span>Hunter McNichols*, Wanyong Feng*, Jaewook Lee*, <em>Alexander Scarlatos</em>, Digory Smith, Simon Woodhead, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/abs/2305.14502" target="_blank">RetICL: Sequential Retrieval of In-Context Examples with Reinforcement Learning</a>
+                            <br/><b>Preprint</b>
+                            <br/><span><em>Alexander Scarlatos</em>, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://educationaldatamining.org/edm2022/proceedings/2022.EDM-posters.88/index.html" target="_blank">Process-BERT: A Framework for Representation Learning on Educational Process Data</a>
+                            <br/><b>EDM 2022</b>
+                            <br/><span><em>Alexander Scarlatos</em>, Christopher Brinton, Andrew Lan</span>
+                        </li>
+                        <li>
+                            <a href="https://aclanthology.org/2022.semeval-1.60" target="_blank">UMass PCL at SemEval-2022 Task 4: Pre-trained Language Model Ensembles for Detecting Patronizing and Condescending Language</a>
+                            <br/><b>SemEval (NAACL Workshop) 2022</b>
+                            <br/><span>David Koleczek, <em>Alexander Scarlatos</em>, Preshma Linet Pereira, Siddha Makarand Karkare</span>
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/abs/2009.14268" target="_blank">Sonispace: a simulated-space interface for sound design and experimentation</a>
+                            <br/><b>Master's Project Report</b>
+                            <br/><span><em>Alexander Scarlatos</em></span>
+                        </li>
+                    </ul>
+
+                    <p>* equal contribution</p>
+                </div>
+
                 <div class="section" id="software-section" style="display:none;">
                     <div class="list-item">
                         <h2><a href="http://www.infinite320.com" target="_blank">Infinite 320</a></h2>
@@ -203,8 +391,8 @@
                             <div>
                                 <p>
                                     Infinite 320 is a gaming website/framework I created with frontend developer Jim Palmeri.
-                                    Currently it supports one game, Oh Shoot!, a traditional tabletop card game where players bet and
-                                    compete for bids. Some features include a ranking/leveling system, AI players, player customization, and emotes.
+                                    Currently it supports two card games: Oh Shoot and No Thanks.
+                                    Some features include a ranking/leveling system, AI players, player customization, and emotes.
                                 </p>
                             </div>
                         </div>
@@ -242,6 +430,24 @@
                                     A multiplayer board game, centered around the vulnerabilities of digital currency.
                                     The game is meant to be a tool to educate on capitalism in a digital world, as well as examine behaviors of players under certain conditions.
                                     I built the game with two friends: Joshua Cehulic, who designed the game, and Marisa DePasquale, who created the assets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                        <h2><a href="synth.html" target="_blank">Hybrid Synthesizer</a></h2>
+                        <div class="list-item-content">
+                            <div>
+                                <a href="synth.html" target="_blank">
+                                    <img src="https://ajscarlatos.s3.us-east-2.amazonaws.com/Synth.jpg" width="170" height="170" />
+                                </a>
+                            </div>
+                            <div>
+                                <p>
+                                    A digital/analog hybrid, MIDI-controlled synthesizer, built with an Arduino microcontroller.
+                                    Users can choose the wave generation function and modify envelope settings to achieve unique sounds.
+                                    I wrote the code, and the electrical engineering was done by Collin Champagne.
                                 </p>
                             </div>
                         </div>
@@ -321,24 +527,6 @@
                     </div> -->
                     <hr>
                     <div class="list-item">
-                        <h2><a href="synth.html" target="_blank">Hybrid Synthesizer</a></h2>
-                        <div class="list-item-content">
-                            <div>
-                                <a href="synth.html" target="_blank">
-                                    <img src="https://ajscarlatos.s3.us-east-2.amazonaws.com/Synth.jpg" width="170" height="170" />
-                                </a>
-                            </div>
-                            <div>
-                                <p>
-                                    A digital/analog hybrid, MIDI-controlled synthesizer, built with an Arduino microcontroller.
-                                    Users can choose the wave generation function and modify envelope settings to achieve unique sounds.
-                                    I wrote the code, and the electrical engineering was done by Collin Champagne.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="list-item">
                         <h2><a href="https://github.com/alexscarlatos/education-viz">Education Visualizer</a></h2>
                         <div class="list-item-content">
                             <div>
@@ -403,14 +591,15 @@
                             </div>
                             <div>
                                 <p>
-                                    I've been writing various, unassociated compositions since my Freshman year of college.
-                                    The pieces range in style from EDM to Metal to Experimental.
-                                    My Soundcloud can be found <a target="_blank" href="https://soundcloud.com/aloneindecember">here</a>, for which I go under the name AloneInDecember.
+                                    Over the years, I've created a collection of various musical compositions,
+                                    available on <a target="_blank" href="https://soundcloud.com/aloneindecember">my Soundcloud</a>.
+                                    I cover a wide variety of genres, from dance to metal to experimental, reflecting changing musical
+                                    influences and how they've interacted with meaningful experiences throughout my life.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <hr>
+                    <!-- <hr>
                     <div class="list-item">
                         <h2>Growth</h2>
                         <div class="list-item-content">
@@ -426,32 +615,31 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="section centered" id="photography-section" style="display:none;">
                 </div>
 
-                <div class="section centered" id="videography-section" style="display:none;">
+                <!-- <div class="section centered" id="videography-section" style="display:none;">
                     <p>
                         As a cinematographer, editor, sound designer, and actor, I've been working with the same incredible film team since 2014.
-                        Since we started, we've created a catalog short films, as well as produced a variety of music videos and event videos. Our recent film
-                        <a href="https://www.imdb.com/title/tt9613032/" target="_blank">Miss Freelance</a> screened in 5 film festivals in New York City and overseas, won 4 awards,
-                        and received 30+ reviews from critics.
+                        Since we started, we've created a catalog short films, as well as produced a variety of music videos and event videos.
+                        Our recent films have screened in film festivals in New York City, around the country, and overseas,
+                        as well as won several awards and received reviews from short film critics.
+                        My IMDb can be found <a href="https://www.imdb.com/name/nm8193367/" target="_blank">here</a>.
                     </p>
                     <iframe src="https://player.vimeo.com/video/577835349" width="533" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <hr>
                     <iframe src="https://player.vimeo.com/video/342904617" width="533" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <hr>
                     <iframe width="533" height="300" src="https://www.youtube.com/embed/Y35LaeZw97Q" frameborder="0" allowfullscreen></iframe>
-                    <hr>
-                    <iframe width="533" height="300" src="https://www.youtube.com/embed/6pzW6xCj3XY" frameborder="0" allowfullscreen></iframe>
-                </div>
+                </div> -->
 
             </div>
-            <div id="footer">
+            <!-- <div id="footer">
                 Copyright 2020 Alex Scarlatos
-            </div>
+            </div> -->
 
             <div id="imgModal" class="modal" onclick="imgModalClose()">
                 <span class="close" onclick="imgModalClose()">&times;</span>
